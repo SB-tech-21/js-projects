@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=q, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="flex flex-col items-center justify-center h-screen">
+        <div class="flex flex-col justify-center items-center space-y-2">
+            <p class="text-[30px]">Counter</p>
+            <p id="counter" class="text-[20px]">0</p>
+            <div class="flex justify-center gap-4">
+                <button id="min" class="bg-yellow-300 w-[40px] rounded-lg">-</button>
+                <button id="zero" class="bg-yellow-300 w-[40px] rounded-lg">0</button>
+                <button id="plus" class="bg-yellow-300 w-[40px] rounded-lg">+</button>
+            </div>
+        </div>
+    </div>
+    
+
+        <script>
+            const counterElement = document.getElementById('counter');
+        const buttonElementMin = document.getElementById('min');
+        const buttonElementZero = document.getElementById('zero');
+        const buttonElementPlus = document.getElementById('plus');
+
+
+        buttonElementMin.addEventListener('click', () => {
+            counterElement.textContent = parseInt(counterElement.textContent) - 1;
+        })
+
+        buttonElementZero.addEventListener('click', () => {
+            counterElement.textContent = 0;
+        })
+
+        buttonElementPlus.addEventListener('click', () => {
+            counterElement.textContent = parseInt(counterElement.textContent) + 1;
+        })
+    </script>
+
+</body>
+
+</html>
