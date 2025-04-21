@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=q, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="flex flex-col items-center justify-center h-screen">
+        <div class="flex flex-col justify-center items-center space-y-2">
+
+
+            <img src="https://blog.lightbulbs-direct.com/wp-content/uploads/iStock-537286370-scaled-e1678726251180.jpg" alt=" light-on" class="h-[20%]" id="light-on">
+            <p class="text-[30px]" id="text">Swtiched on</p>
+            <div class="flex justify-center gap-4">
+                <button id="swtiched_on" class="bg-yellow-300 w-[40px] rounded-lg">On</button>
+                <button id="swtiched_off" class="bg-yellow-300 w-[40px] rounded-lg">Off</button>
+            
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        const bulbImageElement = document.getElementById('light-on');
+        const buttonElementswtiched_on = document.getElementById('swtiched_on');
+        const buttonElementswtiched_off = document.getElementById('swtiched_off');
+        const textElement = document.getElementById('text');
+
+        buttonElementswtiched_on.addEventListener('click', () => {
+            bulbImageElement.src="https://blog.lightbulbs-direct.com/wp-content/uploads/iStock-537286370-scaled-e1678726251180.jpg";
+            textElement.textContent = "Switched on";
+        })
+
+
+        buttonElementswtiched_off.addEventListener('click', () => {
+            bulbImageElement.src="https://media.istockphoto.com/id/502789173/photo/light-bulb-concept.jpg?s=612x612&w=0&k=20&c=vJfSDuFJf_4UsQcUsdMNUfDkkNU6Bf9cTHF-n4-Zwvs=";
+            textElement.textContent = "Switched off";
+        })
+    </script>
+
+</body>
+
+</html>
