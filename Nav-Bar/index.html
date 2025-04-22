@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Nav-Bar</title>
+</head>
+
+<body>
+    <header>
+        <section>
+            <div class="2xl:container bg-yellow-400 mx-auto">
+                <div class=" w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2">
+                    <div class="bg-red-500 flex justify-between">
+                        <p>Logo</p>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" id="menu" class="md:hidden"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-menu-icon lucide-menu" >
+                                <line x1="4" x2="20" y1="12" y2="12" />
+                                <line x1="4" x2="20" y1="6" y2="6" />
+                                <line x1="4" x2="20" y1="18" y2="18" /> 
+                            </svg>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24"  id="cross" class="hidden md:hidden"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-x-icon lucide-x">
+                                <path d="M18 6 6 18" />
+                                <path d="m6 6 12 12" />
+                            </svg>
+
+                        </div>
+
+                    </div>
+                    <div class="hidden md:block" id="content">
+                        <nav class="bg-blue-400  ">
+                            <ul class="flex flex-col justify-center items-center md:flex-row md:justify-end gap-4">
+                                <li id="home">Home</li>
+                                <li id="about">About</li>
+                                <li id="Help">Help</li>
+                                <li id="Contact">Contact Us</li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div> 
+            </div>
+        </section>
+
+        <script>
+            const menuElement =document.getElementById('menu')            
+            const crossElement =document.getElementById('cross')
+
+            const contentElement =document.getElementById('content')
+
+            const homeElement =document.getElementById('home')
+            const aboutElement =document.getElementById('about')
+            const HelpElement =document.getElementById('Help')
+            const ContactElement =document.getElementById('Contact')
+
+            menuElement.addEventListener('click',()=>{
+                // contentElement.className = 'md:block'
+                // console.log(crossElement)
+                // crossElement.classList.remove('hidden')
+                // menuElement.classList.add('hidden')
+
+                menuElement.classList.toggle('hidden')
+                crossElement.classList.toggle('hidden')
+                contentElement.classList.toggle('hidden')
+            })
+
+            crossElement.addEventListener('click',()=>{
+                // contentElement.className = 'hidden md:block' we have think about this logic 
+                // console.log(crossElement)
+                // crossElement.classList.add('hidden')
+                // menuElement.classList.remove('hidden')
+
+                menuElement.classList.toggle('hidden')
+                crossElement.classList.toggle('hidden')  //simply u can use the toggle and complete the work
+                contentElement.classList.toggle('hidden')
+            })
+
+            homeElement.addEventListener('click',()=>{
+                // contentElement.className = 'md:block'
+                // console.log(crossElement)
+                // crossElement.classList.remove('hidden')
+                // menuElement.classList.add('hidden')
+
+                menuElement.classList.toggle('hidden')
+                crossElement.classList.toggle('hidden')
+                contentElement.classList.toggle('hidden')
+            })
+
+            aboutElement.addEventListener('click',()=>{
+                // contentElement.className = 'md:block'
+                // console.log(crossElement)
+                // crossElement.classList.remove('hidden')
+                // menuElement.classList.add('hidden')
+
+                menuElement.classList.toggle('hidden')
+                crossElement.classList.toggle('hidden')
+                contentElement.classList.toggle('hidden')
+            })
+            
+            HelpElement.addEventListener('click',()=>{
+                // contentElement.className = 'md:block'
+                // console.log(crossElement)
+                // crossElement.classList.remove('hidden')
+                // menuElement.classList.add('hidden')
+
+                menuElement.classList.toggle('hidden')
+                crossElement.classList.toggle('hidden')
+                contentElement.classList.toggle('hidden')
+            })
+
+            ContactElement.addEventListener('click',()=>{
+                // contentElement.className = 'md:block'
+                // console.log(crossElement)
+                // crossElement.classList.remove('hidden')
+                // menuElement.classList.add('hidden')
+
+                menuElement.classList.toggle('hidden')
+                crossElement.classList.toggle('hidden')
+                contentElement.classList.toggle('hidden')
+            })
+        </script>
+    </header>
+</body>
+
+</html>
