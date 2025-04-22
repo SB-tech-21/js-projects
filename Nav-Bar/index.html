@@ -16,21 +16,21 @@
                     <div class="bg-red-500 flex justify-between">
                         <p>Logo</p>
                         <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" id="menu" class="md:hidden"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="lucide lucide-menu-icon lucide-menu" >
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" id="menu"
+                                class="md:hidden" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-menu-icon lucide-menu">
                                 <line x1="4" x2="20" y1="12" y2="12" />
                                 <line x1="4" x2="20" y1="6" y2="6" />
-                                <line x1="4" x2="20" y1="18" y2="18" /> 
+                                <line x1="4" x2="20" y1="18" y2="18" />
                             </svg>
 
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24"  id="cross" class="hidden md:hidden"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="lucide lucide-x-icon lucide-x">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24"
+                                id="cross" class="hidden md:hidden" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x-icon lucide-x">
                                 <path d="M18 6 6 18" />
                                 <path d="m6 6 12 12" />
                             </svg>
-
                         </div>
 
                     </div>
@@ -44,22 +44,22 @@
                             </ul>
                         </nav>
                     </div>
-                </div> 
+                </div>
             </div>
         </section>
 
         <script>
-            const menuElement =document.getElementById('menu')            
-            const crossElement =document.getElementById('cross')
+            const menuElement = document.getElementById('menu')
+            const crossElement = document.getElementById('cross')
 
-            const contentElement =document.getElementById('content')
+            const contentElement = document.getElementById('content')
 
-            const homeElement =document.getElementById('home')
-            const aboutElement =document.getElementById('about')
-            const HelpElement =document.getElementById('Help')
-            const ContactElement =document.getElementById('Contact')
+            const homeElement = document.getElementById('home')
+            const aboutElement = document.getElementById('about')
+            const HelpElement = document.getElementById('Help')
+            const ContactElement = document.getElementById('Contact')
 
-            menuElement.addEventListener('click',()=>{
+            menuElement.addEventListener('click', () => {
                 // contentElement.className = 'md:block'
                 // console.log(crossElement)
                 // crossElement.classList.remove('hidden')
@@ -70,7 +70,7 @@
                 contentElement.classList.toggle('hidden')
             })
 
-            crossElement.addEventListener('click',()=>{
+            crossElement.addEventListener('click', () => {
                 // contentElement.className = 'hidden md:block' we have think about this logic 
                 // console.log(crossElement)
                 // crossElement.classList.add('hidden')
@@ -81,7 +81,7 @@
                 contentElement.classList.toggle('hidden')
             })
 
-            homeElement.addEventListener('click',()=>{
+            homeElement.addEventListener('click', () => {
                 // contentElement.className = 'md:block'
                 // console.log(crossElement)
                 // crossElement.classList.remove('hidden')
@@ -92,18 +92,7 @@
                 contentElement.classList.toggle('hidden')
             })
 
-            aboutElement.addEventListener('click',()=>{
-                // contentElement.className = 'md:block'
-                // console.log(crossElement)
-                // crossElement.classList.remove('hidden')
-                // menuElement.classList.add('hidden')
-
-                menuElement.classList.toggle('hidden')
-                crossElement.classList.toggle('hidden')
-                contentElement.classList.toggle('hidden')
-            })
-            
-            HelpElement.addEventListener('click',()=>{
+            aboutElement.addEventListener('click', () => {
                 // contentElement.className = 'md:block'
                 // console.log(crossElement)
                 // crossElement.classList.remove('hidden')
@@ -114,7 +103,18 @@
                 contentElement.classList.toggle('hidden')
             })
 
-            ContactElement.addEventListener('click',()=>{
+            HelpElement.addEventListener('click', () => {
+                // contentElement.className = 'md:block'
+                // console.log(crossElement)
+                // crossElement.classList.remove('hidden')
+                // menuElement.classList.add('hidden')
+
+                menuElement.classList.toggle('hidden')
+                crossElement.classList.toggle('hidden')
+                contentElement.classList.toggle('hidden')
+            })
+
+            ContactElement.addEventListener('click', () => {
                 // contentElement.className = 'md:block'
                 // console.log(crossElement)
                 // crossElement.classList.remove('hidden')
